@@ -1,0 +1,6 @@
+<label>Produk:</label>
+<select name="produk_id">
+  <% produk.forEach((p) => { %>
+    <option value="<%= p.id %>"><%= p.nama %> (Rp<%= p.harga %>)</option>
+  <% }) %>
+</select>
